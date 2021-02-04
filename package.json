@@ -1,0 +1,39 @@
+{
+  "name": "gh-action-auto-release",
+  "version": "0.0.0",
+  "description": "GitHub action to automatically create a release based on a commit message.",
+  "main": "index.js",
+  "keywords": [
+    "GitHub",
+    "action",
+    "release",
+    "automation"
+  ],
+  "author": "Frankie Wittevrongel <frankie@cupoftea.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/plugin-request-log": "^1.0.3",
+    "@octokit/request-error": "^2.0.5",
+    "atob": "^2.1.2",
+    "mdast-builder": "^1.1.1",
+    "mdast-util-definitions": "^4.0.0",
+    "mdast-util-to-string": "^2.0.0",
+    "object-hash": "^2.1.1",
+    "remark-gfm": "^1.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-reference-links": "^5.0.0",
+    "remark-squeeze-paragraphs": "^4.0.0",
+    "remark-stringify": "^9.0.1",
+    "unified": "^9.2.0",
+    "unist-util-remove": "^2.0.1",
+    "unist-util-visit": "^2.0.3",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}

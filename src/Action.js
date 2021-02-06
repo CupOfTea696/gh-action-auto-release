@@ -88,7 +88,7 @@ class Action {
         throw 'The regex input was not a valid regex string'
       }
 
-      const [pattern, flags] = matches
+      const [, pattern, flags] = matches
 
       regexArgs.pattern = pattern.replace(/#{\s*semver\s*}/i, semverTpl)
       regexArgs.flags = flags
@@ -101,7 +101,7 @@ class Action {
         throw 'The prerelease-regex input was not a valid regex string'
       }
 
-      const [pattern, flags] = matches
+      const [,pattern, flags] = matches
 
       prereleaseRegexArgs.pattern = pattern.replace(/#{\s*semver\s*}/i, prereleaseTpl)
       prereleaseRegexArgs.flags = flags

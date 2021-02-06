@@ -2,6 +2,7 @@
   "name": "gh-action-auto-release",
   "version": "1.0.0",
   "description": "GitHub action to automatically create a release based on a commit message.",
+  "private": true,
   "main": "index.js",
   "keywords": [
     "GitHub",

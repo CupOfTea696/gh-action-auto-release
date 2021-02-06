@@ -116,7 +116,7 @@ class Action {
     this.config = {
       regex: regexArgs.pattern ? new RegExp(regexArgs.pattern, regexArgs.flags) : semver,
       prereleaseRegex: prereleaseRegexArgs.pattern ? new RegExp(prereleaseRegexArgs.pattern, prereleaseRegexArgs.flags) : prerelease,
-      title: core.getInput('title') || 'Release: $version',
+      title: core.getInput('title') || 'Version $semver',
       tag: core.getInput('tag') || '$version',
       draft: isTrue(core.getInput('draft')),
       changelog: core.getInput('changelog') || 'CHANGELOG.md',

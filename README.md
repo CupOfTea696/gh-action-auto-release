@@ -38,7 +38,7 @@ You can define your own replacements by using a custom `regex` input, see the [P
 The inputs below are available for this workflow. All inputs are optional. 
 
  - `title`: The title for the Release.
-   Default: `Release: $version`
+   Default: `Version $semver`
  - `tag`: The name for the git tag that will be created for this Release.
    Default: `$version`
  - `draft`: Whether new releases should be published as a draft.

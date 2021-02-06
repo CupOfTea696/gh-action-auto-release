@@ -4,7 +4,7 @@ inputs:
   title:
     description: 'Title for the release'
     required: false
-    default: 'Release: $version'
+    default: 'Version $semver'
   tag:
     description: 'Name for the git tag'
     required: false
